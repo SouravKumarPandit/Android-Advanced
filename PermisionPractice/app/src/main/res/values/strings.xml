@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PermisionPractice</string>
+    <string name="action_settings">Settings</string>
+    <string name="gallery_permission">Gallery Permission</string>
+
+    <!-- Messages -->
+    <string name="set_permissions_in_settings">Go to Settings -> Apps and Notifications ->
+        App Name -> App Permissions and grant access to Storage.</string>
+</resources>
