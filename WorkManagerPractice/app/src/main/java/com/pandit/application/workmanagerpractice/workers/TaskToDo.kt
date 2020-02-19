@@ -20,27 +20,35 @@ import android.content.Context
 import androidx.work.Data
 import androidx.work.Worker
 import androidx.work.WorkerParameters
+import com.pandit.application.workmanagerpractice.DATA_KEY
 import java.io.FileNotFoundException
 
-class BlurWorker(ctx: Context, params: WorkerParameters) : Worker(ctx, params) {
+class TaskToDo(ctx: Context, params: WorkerParameters) : Worker(ctx, params) {
 
     override fun doWork(): Result {
         val appContext = applicationContext
 
         // Makes a notification when the work starts and slows down the work so that it's easier to
         // see each WorkRequest start, even on emulated devices
-        makeStatusNotification("Blurring image", appContext)
+        makeStatusNotification("DOING SOME TASK BITCH'S", appContext)
         sleep()
 
         return try {
+
+//--------------------------------------------------------------------------------------------------------
+            /*GO DO SOME TASK AND GET THE OUTPUT OF TASK*/
 //            val outputData = createBlurredBitmap(appContext, inputData.getString(KEY_IMAGE_URI))
-//            val outputData: Data = Data.EMPTY
-            val outputData: Data = Data.Builder().build()
+
+//--------------------------------------------------------------------------------------------------------
+            /*setting out put for next task*/
+            val outputData: Data.Builder = Data.Builder()
+            outputData.putString(DATA_KEY,"i have been doing work for to long bro")
+
 
 
 //            Result.success()
             /*pass if having data */
-            Result.success(outputData)
+            Result.success(outputData.build())
         } catch (fileNotFoundException: FileNotFoundException) {
             throw RuntimeException("Failed to decode input stream", fileNotFoundException)
         } catch (throwable: Throwable) {

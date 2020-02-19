@@ -79,6 +79,8 @@ fun makeStatusNotification(message: String, context: Context) {
     NotificationManagerCompat.from(context).notify(NOTIFICATION_ID, builder.build())
 }
 
+
+
 /**
  * Method for sleeping for a fixed about of time to emulate slower work
  */
@@ -88,68 +90,4 @@ fun sleep() {
     } catch (e: InterruptedException) {
     }
 
-}
-
-/**
- * Blurs the given Bitmap image
- * @param bitmap Image to blur
- * @param applicationContext Application context
- * @return Blurred bitmap image
- */
-@WorkerThread
-fun blurBitmap(bitmap: Bitmap, applicationContext: Context): Bitmap {
-    lateinit var rsContext: RenderScript
-    try {
-
-        // Create the output bitmap
-        val output = Bitmap.createBitmap(
-                bitmap.width, bitmap.height, bitmap.config)
-
-        // Blur the image
-        rsContext = RenderScript.create(applicationContext, RenderScript.ContextType.DEBUG)
-        val inAlloc = Allocation.createFromBitmap(rsContext, bitmap)
-        val outAlloc = Allocation.createTyped(rsContext, inAlloc.type)
-        val theIntrinsic = ScriptIntrinsicBlur.create(rsContext, Element.U8_4(rsContext))
-        theIntrinsic.apply {
-            setRadius(10f)
-            theIntrinsic.setInput(inAlloc)
-            theIntrinsic.forEach(outAlloc)
-        }
-        outAlloc.copyTo(output)
-
-        return output
-    } finally {
-        rsContext.finish()
-    }
-}
-
-/**
- * Writes bitmap to a temporary file and returns the Uri for the file
- * @param applicationContext Application context
- * @param bitmap Bitmap to write to temp file
- * @return Uri for temp file with bitmap
- * @throws FileNotFoundException Throws if bitmap file cannot be found
- */
-@Throws(FileNotFoundException::class)
-fun writeBitmapToFile(applicationContext: Context, bitmap: Bitmap): Uri {
-    val name = String.format("blur-filter-output-%s.png", UUID.randomUUID().toString())
-    val outputDir = File(applicationContext.filesDir, OUTPUT_PATH)
-    if (!outputDir.exists()) {
-        outputDir.mkdirs() // should succeed
-    }
-    val outputFile = File(outputDir, name)
-    var out: FileOutputStream? = null
-    try {
-        out = FileOutputStream(outputFile)
-        bitmap.compress(Bitmap.CompressFormat.PNG, 0 /* ignored for PNG */, out)
-    } finally {
-        out?.let {
-            try {
-                it.close()
-            } catch (ignore: IOException) {
-            }
-
-        }
-    }
-    return Uri.fromFile(outputFile)
 }

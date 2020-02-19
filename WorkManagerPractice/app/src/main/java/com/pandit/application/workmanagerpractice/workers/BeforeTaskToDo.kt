@@ -4,13 +4,13 @@ import android.content.Context
 import androidx.work.Worker
 import androidx.work.WorkerParameters
 
-class CleanupWorker(ctx: Context, params: WorkerParameters) : Worker(ctx, params) {
+class BeforeTaskToDo(ctx: Context, params: WorkerParameters) : Worker(ctx, params) {
 
     override fun doWork(): Result {
 
         // Makes a notification when the work starts and slows down the work so that
         // it's easier to see each WorkRequest start, even on emulated devices
-        makeStatusNotification("Cleaning up old temporary files", applicationContext)
+        makeStatusNotification("DOING SOME WORK BEFORE ACTUAL TASK START", applicationContext)
         sleep()
 
         return try {
