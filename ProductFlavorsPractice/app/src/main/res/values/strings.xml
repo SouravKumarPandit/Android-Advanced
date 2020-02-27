@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ProductFlavorsPractice</string>
+
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_3">Option 3</string>
+    <string name="option_4">Option 4</string>
+    <string name="option_5">Option 5</string>
+
+</resources>
