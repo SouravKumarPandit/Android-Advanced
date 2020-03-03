@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Coupon Preferences"/>
+    <CheckBoxPreference android:title="Cashback Offers"
+        android:key="viewCashbackOffers"
+        android:summary="Show Latest Cashback Offers"/>
+    <CheckBoxPreference android:title="Coupon Offers"
+        android:key="viewCoupons"
+        android:summary="Show Latest Coupons"/>
+    <CheckBoxPreference android:title="Deals Offers"
+        android:key="viewDeals"
+        android:summary="Show Latest Deals"/>
+    <SwitchPreference android:key="offerEmail"
+        android:title="Send Offer Email"
+        android:defaultValue="true"/>
+</PreferenceScreen>
+<!--
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.preference.PreferenceCategory android:title="Coupon Preferences"/>
+    <androidx.preference.CheckBoxPreference android:title="Cashback Offers"
+        android:key="viewCashbackOffers"
+        android:summary="Show Latest Cashback Offers"/>
+    <androidx.preference.CheckBoxPreference android:title="Coupon Offers"
+        android:key="viewCoupons"
+        android:summary="Show Latest Coupons"/>
+    <androidx.preference.CheckBoxPreference android:title="Deals Offers"
+        android:key="viewDeals"
+        android:summary="Show Latest Deals"/>
+    <androidx.preference.SwitchPreference  android:key="offerEmail"
+        android:title="Send Offer Email"
+        android:defaultValue="true"/>
+</androidx.preference.PreferenceScreen>-->

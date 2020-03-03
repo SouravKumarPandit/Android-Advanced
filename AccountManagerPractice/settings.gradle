@@ -1,0 +1,2 @@
+rootProject.name='AccountManagerPractice'
+include ':app'

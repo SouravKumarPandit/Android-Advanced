@@ -1,0 +1,196 @@
+{
+  "project_info": {
+    "project_number": "767777384451",
+    "firebase_url": "https://the-encrypts.firebaseio.com",
+    "project_id": "the-encrypts",
+    "storage_bucket": "the-encrypts.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767777384451:android:aa773f22cb82ca4c788636",
+        "android_client_info": {
+          "package_name": "com.app.vrlocal.conference_maker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767777384451-iehb3nm5kej5jsi3md0bgco4947hmbec.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.vrlocal.conference_maker",
+            "certificate_hash": "071e71455b51697f4490eeaf811c644520af50c2"
+          }
+        },
+        {
+          "client_id": "767777384451-8e61c0p0rgs1hecp2eb7co8mpgf4bakg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXuyZ_zUGXuGHxguflvvoS6wLDXruXo2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767777384451-8e61c0p0rgs1hecp2eb7co8mpgf4bakg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767777384451:android:72b80d48f0b3de78788636",
+        "android_client_info": {
+          "package_name": "com.blackhole.chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767777384451-uoeo5mb6ob8k04ko9sjldut7925dmi3p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blackhole.chat_app",
+            "certificate_hash": "071e71455b51697f4490eeaf811c644520af50c2"
+          }
+        },
+        {
+          "client_id": "767777384451-8e61c0p0rgs1hecp2eb7co8mpgf4bakg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXuyZ_zUGXuGHxguflvvoS6wLDXruXo2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767777384451-8e61c0p0rgs1hecp2eb7co8mpgf4bakg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767777384451:android:a47cec7662c513c6788636",
+        "android_client_info": {
+          "package_name": "com.bydomani.interior.app.bydomani"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767777384451-dbagfqadepffcejt3ealq0fovjngj4a0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bydomani.interior.app.bydomani",
+            "certificate_hash": "071e71455b51697f4490eeaf811c644520af50c2"
+          }
+        },
+        {
+          "client_id": "767777384451-8e61c0p0rgs1hecp2eb7co8mpgf4bakg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXuyZ_zUGXuGHxguflvvoS6wLDXruXo2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767777384451-8e61c0p0rgs1hecp2eb7co8mpgf4bakg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767777384451:android:3c6d9b1908ae11b8788636",
+        "android_client_info": {
+          "package_name": "com.pandit.application.fcmnotificationpractice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767777384451-g194rm73ds723unt08eudbb5fjdrnqg1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pandit.application.fcmnotificationpractice",
+            "certificate_hash": "071e71455b51697f4490eeaf811c644520af50c2"
+          }
+        },
+        {
+          "client_id": "767777384451-8e61c0p0rgs1hecp2eb7co8mpgf4bakg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXuyZ_zUGXuGHxguflvvoS6wLDXruXo2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767777384451-8e61c0p0rgs1hecp2eb7co8mpgf4bakg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:767777384451:android:ed46a5637cc1eae1788636",
+        "android_client_info": {
+          "package_name": "com.vrlocal.android.baseproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "767777384451-8tadmmilocabplohaafve2r8or247c7l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vrlocal.android.baseproject",
+            "certificate_hash": "071e71455b51697f4490eeaf811c644520af50c2"
+          }
+        },
+        {
+          "client_id": "767777384451-8e61c0p0rgs1hecp2eb7co8mpgf4bakg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXuyZ_zUGXuGHxguflvvoS6wLDXruXo2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "767777384451-8e61c0p0rgs1hecp2eb7co8mpgf4bakg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
